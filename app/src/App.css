@@ -277,12 +277,11 @@
 }
 
 .tickets-btn {
-  background: transparent;
-  color: var(--lavender);
-  border: 1px solid rgba(192, 132, 252, 0.4);
+  background: #fff;
+  color: #000;
+  border: none;
 }
 
 .tickets-btn:hover {
-  filter: brightness(1.2);
-  border-color: rgba(192, 132, 252, 0.8);
+  filter: brightness(0.92);
 }
