@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 const SPOTIFY_URL    = 'https://open.spotify.com/intl-es/track/1u4LkwYYzc3XnXrPKrrKcg?si=727c6e9ea06744c0';
 const APPLE_URL      = 'https://music.apple.com/co/album/parpadeo-single/6770698405';
+const TIDAL_URL      = 'https://tidal.com/track/526016105/uy';
 const ARTIST_IMG     = 'https://i.scdn.co/image/ab67616d00001e0214b81b756f5fb027a10c7e40';
 const VIDEO_URL      = 'https://res.cloudinary.com/dvyp2uf1s/video/upload/v1779410358/visualizer_compressed_omtltb.mp4';
 
@@ -105,6 +106,17 @@ export default function PostCountdown() {
             whileTap={{ scale: 0.97 }}
           >
             Apple Music
+          </motion.a>
+
+          <motion.a
+            href={TIDAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="stream-btn tidal-btn"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            Tidal
           </motion.a>
         </motion.div>
       </motion.div>
