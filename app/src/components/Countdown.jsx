@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import PostCountdown from './PostCountdown';
 
 // Target: Thursday May 21, 2026 at 7:11 PM (local time)
 const TARGET = new Date(2026, 4, 21, 19, 11, 0, 0);
@@ -60,16 +61,7 @@ export default function Countdown() {
   }, []);
 
   if (!time) {
-    return (
-      <motion.div
-        className="expired-text"
-        initial={{ scale: 0.5, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: 'spring', stiffness: 200, damping: 15 }}
-      >
-        ✦ IT'S TIME ✦
-      </motion.div>
-    );
+    return <PostCountdown />;
   }
 
   return (
