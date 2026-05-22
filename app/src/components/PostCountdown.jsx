@@ -1,8 +1,8 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const SPOTIFY_URL = 'https://open.spotify.com/intl-es/artist/0rssDtHql43sHidf6XgMz8?si=Rb3xuH2gSQeh8G413NNTTw';
-const ARTIST_IMG  = 'https://i.scdn.co/image/ab67616100005174a1496f1ee881fe416df8388b';
+const SPOTIFY_URL = 'https://open.spotify.com/intl-es/track/1u4LkwYYzc3XnXrPKrrKcg?si=727c6e9ea06744c0';
+const ARTIST_IMG  = 'https://i.scdn.co/image/ab67616d00001e0214b81b756f5fb027a10c7e40';
 
 export default function PostCountdown() {
   const videoRef = useRef(null);
@@ -51,7 +51,7 @@ export default function PostCountdown() {
         >
           <img
             src={ARTIST_IMG}
-            alt="Kidchen"
+            alt="Parpadeo — Kidchen"
             className="artist-img"
           />
         </motion.div>
@@ -63,7 +63,7 @@ export default function PostCountdown() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.7 }}
         >
-          kidchen
+          parpadeo
         </motion.h1>
 
         {/* Tagline */}
@@ -73,7 +73,7 @@ export default function PostCountdown() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.6, duration: 0.7 }}
         >
-          el ruido y el recuerdo nos mantiene despiertos
+          kidchen · 2026
         </motion.p>
 
         {/* Spotify button */}
@@ -89,7 +89,7 @@ export default function PostCountdown() {
           whileTap={{ scale: 0.97 }}
         >
           <SpotifyIcon />
-          Escuchar en Spotify
+          Escuchar Parpadeo
         </motion.a>
       </motion.div>
     </motion.div>
