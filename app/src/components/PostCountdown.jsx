@@ -121,16 +121,17 @@ export default function PostCountdown() {
           </motion.a>
         </motion.div>
 
-        {/* Tickets link */}
+        {/* Tickets button */}
         <motion.a
           href={TICKETS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="tickets-link"
+          className="stream-btn tickets-btn"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.2, duration: 0.6 }}
-          whileHover={{ opacity: 1 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
         >
           Boletas · 13 de Junio
         </motion.a>
